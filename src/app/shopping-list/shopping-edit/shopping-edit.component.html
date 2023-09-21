@@ -2,16 +2,16 @@
   <div class="row">
     <div class="col-3">
       <label for="ingredientName" class="form-label">Name</label>
-      <input type="text" class="form-control" id="ingredientName">
+      <input type="text" class="form-control" id="ingredientName" #nameInput>
     </div>
     <div class="col-2">
       <label for="ingredientAmount" class="form-label">Amount</label>
-      <input type="number" class="form-control" id="ingredientAmount">
+      <input type="number" class="form-control" id="ingredientAmount" #amountInput>
     </div>
     <div class="col-7 d-flex align-items-end">
-      <button class="btn btn-success" style="width: 100px;">Add</button>
-      <button class="btn btn-danger mx-3" style="width: 100px;">Delete</button>
-      <button class="btn btn-secondary" style="width: 100px;">Clear</button>
+      <button type="button" class="btn btn-success" style="width: 100px;" (click)="onAddItem()">Add</button>
+      <button type="button" class="btn btn-danger mx-3" style="width: 100px;">Delete</button>
+      <button type="button" class="btn btn-secondary" style="width: 100px;">Clear</button>
     </div>
   </div>
 </form>
