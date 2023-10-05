@@ -8,11 +8,11 @@
       <li class="nav-item">
         <a class="nav-link" (click)="onSelect('shopping-list')">Shopping List</a>
       </li>
-      <li class="nav-item dropdown ms-auto">
-        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <li class="nav-item dropdown ms-auto" appDropdown>
+        <a #dropdownToggle class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           Manage
         </a>
-        <ul class="dropdown-menu">
+        <ul #dropdownMenu class="dropdown-menu">
           <li><a class="dropdown-item" href="#">Save Data</a></li>
           <li><a class="dropdown-item" href="#">Fetch Data</a></li>
         </ul>
